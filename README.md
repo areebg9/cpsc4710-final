@@ -4,6 +4,8 @@
 
 We provide our fork of Pulfer et al.’s repository at [https://github.com/rohanphanse/robustness-tokens](https://github.com/rohanphanse/robustness-tokens). The training and evaluation results in Figure 7 and Table 2 can be reproduced by following the setup guide in [README.md](https://github.com/rohanphanse/robustness-tokens/blob/main/README.md) and then running [train.sh](https://github.com/rohanphanse/robustness-tokens/blob/main/train.sh) and [eval.sh](https://github.com/rohanphanse/robustness-tokens/blob/main/eval.sh) respectively.
 
+The trained weights for robustness-token backbones (with 10 robustness tokens) and their corresponding custom linear heads for DINOv2-ViTS/14, DINOv2-ViTB/14, and DINOv2-ViTL/14 are available at https://huggingface.co/cpsc-5710-final-vit-robustness/robustness-token-trained-models/tree/main. These weights can be used to reproduce the robustness-token results reported in Tables 2 and 3.
+
 ## 3. Vision Transformer Robustness for Patch Based Adversarial Attacks & Defenses 
 We implement a robustness evaluation pipeline for Vision Transformers (ViT, DeiT, DINOv2 models) using the "ILSVRC/imagenet-1k" dataset in `patch-attack-defenses-final.ipynb`. Each section of the notebook has detailed comments on how to reproduce and run the pipeline for evaluations and capture the experiment results  
 The main sections are:
